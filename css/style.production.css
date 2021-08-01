@@ -29,6 +29,7 @@ body{
 }
 
 .active-link{
+  /* No underlining when hovering over a link */
   text-decoration: none;
   color: #e6f7ff;
   background-color: navy !important;
@@ -38,6 +39,7 @@ body{
 }
 
 li a:hover{
+  /* No underlining when hovering over a link */
   text-decoration: none;
   color: #e6f7ff;
   background-color: navy !important;
@@ -47,6 +49,7 @@ li a:hover{
 }
 
 li a:focus{
+  /* No underlining when hovering over a link */
   text-decoration: none;
   color: #e6f7ff;
   background-color: navy !important;
