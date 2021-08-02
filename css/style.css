@@ -1,11 +1,11 @@
 :root{
-  --base_font_color: navy  !important;
+  --base_font_color: navy;
   --base_bg_color : #e6f7ff;
   --base_shadow_color:#ccc;
-
+  
   /*grid color*/
-  --grid_bg_color: #ffe6f2  !important;
-
+  --grid_bg_color: #fff;
+  
   /*css animation colors*/
   --green:#4dffb8;
   --pink:#ff80ff;
@@ -30,7 +30,6 @@ body{
 }
 
 .active-link, li a:hover, li a:focus{
-  /* No underlining when hovering over a link */
   text-decoration: none;
   color: var(--base_bg_color);
   background-color: var(--base_font_color) !important;
@@ -68,19 +67,10 @@ body{
 }
 
 .profile {
-  width: 80%;
-  min-width: 600px;
-  max-width: 800px;
-  min-height: 400px;
+  min-width: auto;
+  max-width: 600px;
+  min-height: auto;
   margin: 50px auto;
-}
-
-.profile__text {
-  flex: 1 1 100px;
-}
-
-.center{
-  text-align: center;
 }
 
 .grid {
@@ -91,7 +81,7 @@ body{
 }
 
 .grid__item {
-  background-color: var(--grid_bg_color);
+  background-color: var(--grid_bg_color) !important;
   padding: 15px;
   /*@include box-shadow: (0, 5px, 10px, var(--base_shadow_color));*/
   box-shadow: 0 5px 10px var(--base_shadow_color);
@@ -118,7 +108,7 @@ body{
   .grid {
     grid-gap: 10px;
   }
-
+  
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
@@ -130,11 +120,6 @@ body{
   display: flex;
   flex-direction:column;
   text-align:center;
-}
-
-.footer_scale{
-  width: 30px;
-  height: 30px;
 }
 
 @keyframes color-green {
@@ -171,7 +156,6 @@ body{
     fill: var(--orange);
   }
 }
-
 .img-move {
   animation: 1s move-back infinite alternate linear;
 }
@@ -210,8 +194,7 @@ body{
   }
   to {
     transform: rotate(360deg);
-    transform-origin: top left;
-
+    transform-origin: top left;    
   }
 }
 .img-rotate-360{
