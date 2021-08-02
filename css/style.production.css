@@ -6,9 +6,9 @@
 */
 
 :root{
-
+  
   /*grid color*/
-
+  
   /*css animation colors*/
 }
 /*
@@ -29,7 +29,6 @@ body{
 }
 
 .active-link{
-  /* No underlining when hovering over a link */
   text-decoration: none;
   color: #e6f7ff;
   background-color: navy !important;
@@ -39,7 +38,6 @@ body{
 }
 
 li a:hover{
-  /* No underlining when hovering over a link */
   text-decoration: none;
   color: #e6f7ff;
   background-color: navy !important;
@@ -49,7 +47,6 @@ li a:hover{
 }
 
 li a:focus{
-  /* No underlining when hovering over a link */
   text-decoration: none;
   color: #e6f7ff;
   background-color: navy !important;
@@ -84,22 +81,16 @@ li a:focus{
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+  /*@include box-shadow: (0, 5px, 10px, var(--base_shadow_color));*/
   -webkit-box-shadow: 0 5px 10px #ccc;
           box-shadow: 0 5px 10px #ccc;
 }
 
 .profile {
-  width: 80%;
-  min-width: 600;
-  max-width: 800px;
-  min-height: 400px;
+  min-width: auto;
+  max-width: 600px;
+  min-height: auto;
   margin: 50px auto;
-}
-
-.profile__text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100px;
-          flex: 1 1 100px;
 }
 
 .grid {
@@ -112,7 +103,7 @@ li a:focus{
 }
 
 .grid__item {
-  background-color: #ffe6f2;
+  background-color: #fff !important;
   padding: 15px;
   /*@include box-shadow: (0, 5px, 10px, var(--base_shadow_color));*/
   -webkit-box-shadow: 0 5px 10px #ccc;
@@ -145,7 +136,7 @@ li a:focus{
   .grid {
     grid-gap: 10px;
   }
-
+  
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
@@ -233,7 +224,6 @@ li a:focus{
     fill: #ff8533;
   }
 }
-
 .img-move {
   -webkit-animation: 1s move-back infinite alternate linear;
           animation: 1s move-back infinite alternate linear;
@@ -308,8 +298,7 @@ li a:focus{
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     -webkit-transform-origin: top left;
-            transform-origin: top left;
-
+            transform-origin: top left;    
   }
 }
 
@@ -322,8 +311,7 @@ li a:focus{
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     -webkit-transform-origin: top left;
-            transform-origin: top left;
-
+            transform-origin: top left;    
   }
 }
 .img-rotate-360{
