@@ -12,14 +12,7 @@
   --orange:#ff8533;
   --grey:#bfbfbf;
 }
-/*
-@mixin box-shadow($x, $y, $blur, $c){
--webkit-box-shadow : $x, $y, $blur, $c;
--mos-box-shadow : $x, $y, $blur, $c;
--ms-box-shadow : $x, $y, $blur, $c;
-box-shadow : $x, $y, $blur, $c;
-}
-*/
+
 *{
   font-family: 'Merienda', cursive;
   color: var(--base_font_color);
@@ -40,7 +33,6 @@ body{
 .navbar-style{
   text-transform: uppercase;
   font-size: 20px;
-  /*@include box-shadow: (0px, 5px, 10px, var(--base_shadow_color));*/
   box-shadow: 0 5px 10px var(--base_shadow_color);
 }
 
@@ -62,7 +54,6 @@ body{
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
-  /*@include box-shadow: (0, 5px, 10px, var(--base_shadow_color));*/
   box-shadow: 0 5px 10px var(--base_shadow_color);
 }
 
@@ -83,7 +74,6 @@ body{
 .grid__item {
   background-color: var(--grid_bg_color) !important;
   padding: 15px;
-  /*@include box-shadow: (0, 5px, 10px, var(--base_shadow_color));*/
   box-shadow: 0 5px 10px var(--base_shadow_color);
 }
 
@@ -158,45 +148,4 @@ body{
 }
 .img-move {
   animation: 1s move-back infinite alternate linear;
-}
-
-@keyframes rotate5 {
-  from {
-    transform:rotate(0deg);
-    fill:#000000;
-  }
-  to {
-    transform:rotate(5deg);
-    fill: var(--grey);
-  }
-}
-.img-rotate5{
-  animation: rotate5 1s infinite linear;
-}
-
-@keyframes rotate-5 {
-  from {
-    transform:rotate(0deg);
-    fill:#000000;
-  }
-  to {
-    transform:rotate(-5deg);
-    fill: var(--grey);
-  }
-}
-.img-rotate-5{
-  animation: rotate-5 1s infinite linear;
-}
-
-@keyframes rotate-360 {
-  from {
-    transform:rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-    transform-origin: top left;    
-  }
-}
-.img-rotate-360{
-  animation: rotate-360 1s infinite linear;
 }
