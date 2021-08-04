@@ -2,10 +2,10 @@
   --base_font_color: navy;
   --base_bg_color : #e6f7ff;
   --base_shadow_color:#ccc;
-  
+
   /*grid color*/
   --grid_bg_color: #fff;
-  
+
   /*css animation colors*/
   --green:#4dffb8;
   --pink:#ff80ff;
@@ -82,23 +82,23 @@ body{
   grid-row: 1 / 3;
 }
 
-@media all and (max-width: 500px) {
+@media (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px){
+@media (min-width: 500px) and (max-width: 750px){
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (max-width: 750px) {
+@media (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
-  
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
