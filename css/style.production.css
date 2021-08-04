@@ -11,14 +11,7 @@
   
   /*css animation colors*/
 }
-/*
-@mixin box-shadow($x, $y, $blur, $c){
--webkit-box-shadow : $x, $y, $blur, $c;
--mos-box-shadow : $x, $y, $blur, $c;
--ms-box-shadow : $x, $y, $blur, $c;
-box-shadow : $x, $y, $blur, $c;
-}
-*/
+
 *{
   font-family: 'Merienda', cursive;
   color: navy;
@@ -58,7 +51,6 @@ li a:focus{
 .navbar-style{
   text-transform: uppercase;
   font-size: 20px;
-  /*@include box-shadow: (0px, 5px, 10px, var(--base_shadow_color));*/
   -webkit-box-shadow: 0 5px 10px #ccc;
           box-shadow: 0 5px 10px #ccc;
 }
@@ -81,7 +73,6 @@ li a:focus{
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
-  /*@include box-shadow: (0, 5px, 10px, var(--base_shadow_color));*/
   -webkit-box-shadow: 0 5px 10px #ccc;
           box-shadow: 0 5px 10px #ccc;
 }
@@ -105,7 +96,6 @@ li a:focus{
 .grid__item {
   background-color: #fff !important;
   padding: 15px;
-  /*@include box-shadow: (0, 5px, 10px, var(--base_shadow_color));*/
   -webkit-box-shadow: 0 5px 10px #ccc;
           box-shadow: 0 5px 10px #ccc;
 }
@@ -227,94 +217,4 @@ li a:focus{
 .img-move {
   -webkit-animation: 1s move-back infinite alternate linear;
           animation: 1s move-back infinite alternate linear;
-}
-
-@-webkit-keyframes rotate5 {
-  from {
-    -webkit-transform:rotate(0deg);
-            transform:rotate(0deg);
-    fill:#000000;
-  }
-  to {
-    -webkit-transform:rotate(5deg);
-            transform:rotate(5deg);
-    fill: #bfbfbf;
-  }
-}
-
-@keyframes rotate5 {
-  from {
-    -webkit-transform:rotate(0deg);
-            transform:rotate(0deg);
-    fill:#000000;
-  }
-  to {
-    -webkit-transform:rotate(5deg);
-            transform:rotate(5deg);
-    fill: #bfbfbf;
-  }
-}
-.img-rotate5{
-  -webkit-animation: rotate5 1s infinite linear;
-          animation: rotate5 1s infinite linear;
-}
-
-@-webkit-keyframes rotate-5 {
-  from {
-    -webkit-transform:rotate(0deg);
-            transform:rotate(0deg);
-    fill:#000000;
-  }
-  to {
-    -webkit-transform:rotate(-5deg);
-            transform:rotate(-5deg);
-    fill: #bfbfbf;
-  }
-}
-
-@keyframes rotate-5 {
-  from {
-    -webkit-transform:rotate(0deg);
-            transform:rotate(0deg);
-    fill:#000000;
-  }
-  to {
-    -webkit-transform:rotate(-5deg);
-            transform:rotate(-5deg);
-    fill: #bfbfbf;
-  }
-}
-.img-rotate-5{
-  -webkit-animation: rotate-5 1s infinite linear;
-          animation: rotate-5 1s infinite linear;
-}
-
-@-webkit-keyframes rotate-360 {
-  from {
-    -webkit-transform:rotate(0deg);
-            transform:rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;    
-  }
-}
-
-@keyframes rotate-360 {
-  from {
-    -webkit-transform:rotate(0deg);
-            transform:rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;    
-  }
-}
-.img-rotate-360{
-  -webkit-animation: rotate-360 1s infinite linear;
-          animation: rotate-360 1s infinite linear;
 }
